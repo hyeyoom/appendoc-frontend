@@ -1,0 +1,36 @@
+.appendoc-wiki-article {
+    padding: 60px 10%;
+    width: 65%;
+    margin: auto;
+}
+
+.appendoc-wiki-article-title {
+    color: #edf0f1;
+    font-size: 64px;
+    display: block;
+    padding-bottom: 64px;
+}
+
+.appendoc-wiki-article .appendoc-wiki-article-title ~ h1, h2, h3, h4, h5, h6 {
+    color: #edf0f1;
+    padding-top: 4rem;
+    padding-bottom: 10px;
+    border-bottom: 2px #edf0f1 solid;
+}
+
+.appendoc-wiki-article .appendoc-wiki-article-title ~ h1 { font-size: 2rem; }
+.appendoc-wiki-article h2 { font-size: 1.8rem; }
+.appendoc-wiki-article h3 { font-size: 1.6rem; }
+.appendoc-wiki-article h4 { font-size: 1.4rem; }
+.appendoc-wiki-article h5 { font-size: 1.2rem; }
+.appendoc-wiki-article h6 { font-size: 1rem; }
+
+.appendoc-wiki-article > p {
+    color: #edf0f1;
+    font-size: 18px;
+    line-height: 30px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
