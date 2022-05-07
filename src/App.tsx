@@ -1,16 +1,17 @@
 import React from 'react';
-import AppendocNavigation from "./moles/AppendocNavigation";
-import AppendocViewer from "./components/AppendocViewer";
-import AppendocFooter from "./moles/AppendocFooter";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import AppendocWikiViewer from "./pages/AppendocWikiViewer";
+import AppendocEditor from "./pages/AppendocEditor";
 
 const App = () => {
-  return (
-      <>
-          <AppendocNavigation/>
-          <AppendocViewer documentTitle={'Java'}/>
-          <AppendocFooter/>
-      </>
-  )
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route path={"/"} element={<AppendocWikiViewer/>}/>
+                <Route path={"/edit"} element={<AppendocEditor/>}/>
+            </Routes>
+        </BrowserRouter>
+    )
 }
 
 export default App;
